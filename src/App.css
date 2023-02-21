@@ -1,42 +1,43 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .App {
   justify-content: center;
   text-align: center;
 }
 
-.header{
+.header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: rgb(24, 7, 29);
 }
 
-
-body{
+body {
   /* background: linear-gradient(to bottom right, #f1c1fb, #301e32); */
   width: 100%;
   height: 100%;
 }
-.logo{
+.logo {
   color: white;
- font-size: 2.8rem;
- font-family: 'Anton', sans-serif;
+  font-size: 2.8rem;
+  font-family: "Anton", sans-serif;
 }
 
-a{
+.navbar{
+  justify-content: center;
+}
+a {
   text-decoration: none;
   color: rgb(112, 250, 204);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 1.3rem;
 }
-a:hover{
+a:hover {
   color: rgb(87, 182, 233);
 }
 
-.card{
+.card {
   border: 2px rgb(157, 136, 176) solid;
 }
 
@@ -57,76 +58,81 @@ a:hover{
   cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
   background-color: rgb(99, 25, 126);
   color: rgb(190, 252, 251);
   box-shadow: 0px 2px 4px rgba(107, 94, 110, 0.3);
 }
 
-.form-label{
+.form-label {
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-top: 1.3rem;
 }
-.text{
+.text {
   color: rgb(24, 24, 24);
 }
-.movies{
+.movies {
   text-align: center;
   padding-top: 2rem;
 }
-.listMovies{
+.listMovies {
   font-size: 2rem;
 }
 
-.container-button{
+.container-button {
   padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.btn-success{
-  background-color:  rgb(109, 14, 172);
+.btn-success {
+  background-color: rgb(109, 14, 172);
   border: rgb(109, 14, 172) solid 0.5px;
   width: 10rem;
   font-weight: 600;
   color: rgb(248, 246, 246);
- 
-  
 }
-.btn-success:hover{
-  
-  background-color:  rgb(157, 66, 206);
-  
-  
+.btn-success:hover {
+  background-color: rgb(157, 66, 206);
 }
-.btn-danger{
+.btn-danger {
   background-color: rgb(252, 241, 240);
   border: 1px solid rgb(255, 232, 232);
   width: 10rem;
   color: rgb(97, 96, 96);
-
 }
-.list-group{
+.list-group {
   width: 25rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-.list-group-item{
+.list-group-item {
   border-bottom: rgb(244, 220, 251) 2px solid;
 }
-.li .btn{
+.li .btn {
   border: 2px red solid;
 }
 
-.list-movie{
+.list-movie {
   display: flex;
   flex-direction: row;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonEdit {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgb(56, 1, 76);
+  box-shadow: 2px 2px 4px rgba(165, 249, 235, 0.3);
+
+  color: #fdf5fd;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.buttonEdit:hover {
+  background-color: rgb(157, 66, 206);
 }

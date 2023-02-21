@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import uniquid from 'uniquid'
 import {BsFillCameraReelsFill} from 'react-icons/bs'
+import Swal from 'sweetalert2'
 
 
 function AgregarPelicula() {
@@ -27,7 +28,7 @@ function AgregarPelicula() {
 
         axios.post('api/usuario/agregarpelicula', pelicula)
         .then(res => {
-            alert(res.data)
+            Swal.fire(res.data)
         })
         .then(err => {console.log(err)})
 

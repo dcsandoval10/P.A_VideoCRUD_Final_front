@@ -3,7 +3,7 @@ import ListaPeliculas from './ListaPeliculas';
 import AgregarPelicula from './AgregarPelicula';
 import EditarPelicula from './EditarPelicula';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import {RiVideoAddFill, RiEditCircleFill} from 'react-icons/ri'
+import {RiVideoAddFill} from 'react-icons/ri'
 import {GiFilmSpool} from 'react-icons/gi'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         </div>
         <div className='col-md-6 sm-3 navbar text-center'>
           <a href="agregarpelicula">Agregar Pelicula <RiVideoAddFill /></a>
-          <a href="editarpelicula">Editar Pelicula <RiEditCircleFill /></a>
+          {/* <a href="editarpelicula">Editar Pelicula <RiEditCircleFill /></a> */}
         </div>
       </div>
     </div>

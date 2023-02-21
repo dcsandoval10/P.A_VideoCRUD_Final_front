@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 function EditarPelicula() {
     const params = useParams()
@@ -41,7 +42,7 @@ function EditarPelicula() {
         axios.post('/api/usuario/updatemovie', updatemovie)
             .then(res => {
                 console.log(res.data)
-                alert(res.data)
+                Swal.fire(res.data)
             })
             .then(err => { console.log(err) })
 
@@ -49,11 +50,11 @@ function EditarPelicula() {
 
 
     return (
-        <div>
-            <h1>Editar pelicula</h1>
-            <div className='container'>
+        <div className="container mt-5">
+            <h1 className="text-center mb-4 text">E la pelicula</h1>
+            <div className='container mt-4 card'>
                 <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-md-6 mb-3'>
                         <label htmlFor="titleMovie" className='form-label'>Titulo de la pelicula</label>
                         <input type="text" className='form-control' value={title} onChange={(e) => { setTitle(e.target.value) }} />
                     </div>
@@ -77,7 +78,9 @@ function EditarPelicula() {
                         <label htmlFor="country" className='form-label'>Pais</label>
                         <input type="text" className='form-control' value={country} onChange={(e) => { setCountry(e.target.value) }} />
                     </div>
-                    <div> <button onClick={editPelicula} className='btn btn-success'>Guardar cambios</button></div>
+                    <div className='mb-4 '>
+                     <button onClick={editPelicula} className='buttonEdit'>Guardar cambios</button>
+                     </div>
                 </div>
             </div>
         </div>

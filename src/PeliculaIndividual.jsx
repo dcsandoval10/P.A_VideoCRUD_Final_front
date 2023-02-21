@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import {RiEditCircleFill} from 'react-icons/ri'
-import {AiFillDelete} from 'react-icons/ai'
+import Swal from 'sweetalert2'
+// import {RiEditCircleFill} from 'react-icons/ri'
+// import {AiFillDelete} from 'react-icons/ai'
 
 
 function PeliculaIndividual({ pelicula }) {
@@ -13,7 +14,10 @@ function PeliculaIndividual({ pelicula }) {
       .post("/api/usuario/deletemovie", { movieID: movieID })
       .then((res) => {
         console.log(res.data);
-        alert("el dato eliminado es:" + JSON.stringify(res.data));
+        Swal.fire({
+          title: 'Pelicula eliminada' 
+        })
+        // alert("el dato eliminado es:" + JSON.stringify(res.data));
         navigate(0);
       })
       .catch((err) => {
