@@ -79,6 +79,49 @@ a:hover{
   font-size: 2rem;
 }
 
+.container-button{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-success{
+  background-color:  rgb(109, 14, 172);
+  border: rgb(109, 14, 172) solid 0.5px;
+  width: 10rem;
+  font-weight: 600;
+  color: rgb(248, 246, 246);
+ 
+  
+}
+.btn-success:hover{
+  
+  background-color:  rgb(157, 66, 206);
+  
+  
+}
+.btn-danger{
+  background-color: rgb(252, 241, 240);
+  border: 1px solid rgb(255, 232, 232);
+  width: 10rem;
+  color: rgb(97, 96, 96);
+
+}
+.list-group{
+  width: 25rem;
+  font-family: 'Raleway', sans-serif;
+}
+.list-group-item{
+  border-bottom: rgb(244, 220, 251) 2px solid;
+}
+.li .btn{
+  border: 2px red solid;
+}
+
+.list-movie{
+  display: flex;
+  flex-direction: row;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

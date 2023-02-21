@@ -26,13 +26,16 @@ function ListaPeliculas() {
     })
 
     return (
-        <div className='container movies'>
-            <h1 className='listMovies'>
+        <div className='container movies '>
+        <h1 className='listMovies'>
                 Aquí encuentras un listado de peliculas  <FaTheaterMasks/>
             </h1>
-            {listaPeliculas}
-
-            <p></p>
+        <div className='row'>
+        <div class="col-sm-12 col-md-6">
+        {listaPeliculas}
+        </div>
+        </div>
+            
             
         </div>
     )
